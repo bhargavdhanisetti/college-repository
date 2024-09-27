@@ -1,0 +1,6 @@
+CREATE TABLE FacultyProfile (
+    user_id INT PRIMARY KEY REFERENCES User(id),
+    photo TEXT,
+    department_id INT REFERENCES Department(id),
+    office_hours VARCHAR(100)
+);

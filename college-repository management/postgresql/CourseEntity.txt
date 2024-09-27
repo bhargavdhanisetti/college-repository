@@ -1,0 +1,7 @@
+CREATE TABLE Course (
+    id SERIAL PRIMARY KEY,
+    title VARCHAR(100) NOT NULL,
+    description TEXT,
+    department_id INT REFERENCES Department(id),
+    faculty_id INT REFERENCES FacultyProfile(user_id)
+);

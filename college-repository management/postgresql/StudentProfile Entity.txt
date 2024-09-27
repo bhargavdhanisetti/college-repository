@@ -1,0 +1,6 @@
+CREATE TABLE StudentProfile (
+    user_id INT PRIMARY KEY REFERENCES User(id),
+    photo TEXT,
+    department_id INT REFERENCES Department(id),
+    year VARCHAR(20)
+);

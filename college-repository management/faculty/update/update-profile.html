@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Profile</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="profile-update-container">
+        <h1>Update Profile</h1>
+        <form id="update-profile-form">
+            <label for="office-hours">Office Hours:</label>
+            <input type="text" id="office-hours" name="office-hours" required>
+
+            <label for="email">Contact Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <button type="submit">Update</button>
+            <p id="success-message" class="success-message"></p>
+            <p id="error-message" class="error-message"></p>
+        </form>
+    </div>
+    <script src="update-profile.js"></script>
+</body>
+</html>

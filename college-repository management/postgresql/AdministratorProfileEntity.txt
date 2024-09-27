@@ -1,0 +1,5 @@
+CREATE TABLE AdministratorProfile (
+    user_id INT PRIMARY KEY REFERENCES User(id),
+    photo TEXT,
+    department_id INT REFERENCES Department(id)
+);

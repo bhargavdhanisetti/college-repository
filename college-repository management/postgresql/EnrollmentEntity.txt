@@ -1,0 +1,5 @@
+CREATE TABLE Enrollment (
+    id SERIAL PRIMARY KEY,
+    student_id INT REFERENCES StudentProfile(user_id),
+    course_id INT REFERENCES Course(id)
+);

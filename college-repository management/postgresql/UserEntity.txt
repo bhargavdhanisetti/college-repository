@@ -1,0 +1,9 @@
+CREATE TABLE User (
+    id SERIAL PRIMARY KEY,
+    username VARCHAR(50) NOT NULL UNIQUE,
+    password TEXT NOT NULL,
+    role VARCHAR(20) NOT NULL CHECK (role IN ('Student', 'FacultyMember', 'Administrator')),
+    name VARCHAR(100),
+    email VARCHAR(100) UNIQUE,
+    phone VARCHAR(15)
+);
